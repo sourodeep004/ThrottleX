@@ -1,0 +1,2005 @@
+{
+  "project": "ThrottleX",
+  "benchmarkType": "benchmark-comparison",
+  "baseUrl": "http://localhost:5000",
+  "generatedAt": "2026-10-26T10:21:24.498Z",
+  "complete": true,
+  "methodology": {
+    "highLimit": "High-limit algorithm overhead is summarized separately from overload protection.",
+    "overloadProtection": "Overload results describe behavior under the configured rate limits.",
+    "aggregation": "Latency and throughput use medians of available report-level values. Response counts are summed only when the source values are available.",
+    "caveats": [
+      "Results may come from different environments and configurations.",
+      "Legacy report schemas may expose different metrics.",
+      "Missing metrics remain null and are not assumed to be zero.",
+      "High-limit and overload results must not be combined into a single performance ranking.",
+      "This comparison script does not independently validate source report correctness."
+    ]
+  },
+  "sourceReportCounts": {
+    "highLimit": 26,
+    "overloadProtection": 3,
+    "skipped": 0,
+    "legacyWarnings": 1
+  },
+  "highLimit": {
+    "reports": [
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T05-59-06-988Z.json",
+        "generatedAt": "2026-10-24T05:59:06.988Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 5657.2,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 280613,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 5374.4,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 273579,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T06-03-36-164Z.json",
+        "generatedAt": "2026-10-24T06:03:36.165Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 5112.9,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 260737,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 5027.2,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 254827,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T07-22-10-914Z.json",
+        "generatedAt": "2026-10-24T07:22:10.915Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 3879.5,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 186485,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 3737.1,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 187249,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T07-29-29-039Z.json",
+        "generatedAt": "2026-10-24T07:29:29.041Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 4358.11,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 220779,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 3745.5,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 201783,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T07-35-10-314Z.json",
+        "generatedAt": "2026-10-24T07:35:10.315Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 3931.3,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 194973,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 4007.2,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 195925,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T07-37-32-093Z.json",
+        "generatedAt": "2026-10-24T07:37:32.094Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 3316,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 167963,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2956,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 156534,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T07-45-56-696Z.json",
+        "generatedAt": "2026-10-24T07:45:56.697Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 5559.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 283287,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 5616.4,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 279833,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T07-58-12-534Z.json",
+        "generatedAt": "2026-10-24T07:58:12.535Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 3996.2,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 199643,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 4018.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 201751,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T08-10-04-783Z.json",
+        "generatedAt": "2026-10-24T08:10:04.787Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 3946.8,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 200351,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 3963.5,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 198878,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T08-24-00-593Z.json",
+        "generatedAt": "2026-10-24T08:24:00.595Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 2702.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 147290,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2682.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 139472,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T09-20-46-488Z.json",
+        "generatedAt": "2026-10-24T09:20:46.491Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 4066.7,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 195918,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 4178.2,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 208047,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T09-24-20-784Z.json",
+        "generatedAt": "2026-10-24T09:24:20.785Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 2847.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 140637,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2739.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 146214,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T13-13-33-073Z.json",
+        "generatedAt": "2026-10-24T13:13:33.079Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 4417.8,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 228942,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 4936.9,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 229885,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T13-19-45-009Z.json",
+        "generatedAt": "2026-10-24T13:19:45.010Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 4032.4,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 202572,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 4082.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 205217,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T14-01-48-710Z.json",
+        "generatedAt": "2026-10-24T14:01:48.711Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 2100.5,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 109886,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2211.5,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 113828,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T14-09-33-010Z.json",
+        "generatedAt": "2026-10-24T14:09:33.010Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 2362.31,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 114010,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2344.4,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 115955,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T17-27-10-242Z.json",
+        "generatedAt": "2026-10-24T17:27:10.242Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 2365.4,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 116963,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2497.81,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 124757,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T17-51-34-193Z.json",
+        "generatedAt": "2026-10-24T17:51:34.194Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 2849.8,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 132246,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2709.7,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 129405,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-24T19-08-13-418Z.json",
+        "generatedAt": "2026-10-24T19:08:13.418Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 1997.7,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 105607,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 1956.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 93518,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-25T06-13-57-477Z.json",
+        "generatedAt": "2026-10-25T06:13:57.477Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 2240.4,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 117296,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2303.2,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 117416,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-25T06-56-37-482Z.json",
+        "generatedAt": "2026-10-25T06:56:37.482Z",
+        "environment": null,
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 3239.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 158995,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 3209.8,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 156633,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-25T07-21-52-562Z.json",
+        "generatedAt": "2026-10-25T07:21:52.562Z",
+        "environment": {
+          "nodeVersion": "v24.14.0",
+          "platform": "win32",
+          "operatingSystemRelease": "10.0.26300",
+          "architecture": "x64",
+          "cpu": {
+            "model": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+            "logicalCores": 8
+          },
+          "totalMemoryBytes": 8269570048,
+          "redisVersion": "7.4.11"
+        },
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 3179,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 152714,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 3008.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 150771,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-25T07-34-18-790Z.json",
+        "generatedAt": "2026-10-25T07:34:18.790Z",
+        "environment": {
+          "nodeVersion": "v24.14.0",
+          "platform": "win32",
+          "operatingSystemRelease": "10.0.26300",
+          "architecture": "x64",
+          "cpu": {
+            "model": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+            "logicalCores": 8
+          },
+          "totalMemoryBytes": 8269570048,
+          "redisVersion": "7.4.11"
+        },
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 1582.2,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 84391,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 1576.1,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 85638,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-26T09-01-27-468Z.json",
+        "generatedAt": "2026-10-26T09:01:27.468Z",
+        "environment": {
+          "collectedAt": "2026-10-26T08:59:41.152Z",
+          "nodeVersion": "v24.14.0",
+          "nodeEnvironment": "development",
+          "platform": "win32",
+          "operatingSystem": "Windows_NT",
+          "operatingSystemRelease": "10.0.26300",
+          "architecture": "x64",
+          "cpu": {
+            "model": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+            "logicalCores": 8
+          },
+          "totalMemoryBytes": 8269570048,
+          "freeMemoryBytesAtStart": 779907072,
+          "redisVersion": "7.4.11",
+          "redisVersionError": null
+        },
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 2509,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 118590,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2534.2,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 125927,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-26T09-46-45-323Z.json",
+        "generatedAt": "2026-10-26T09:46:45.323Z",
+        "environment": {
+          "collectedAt": "2026-10-26T09:44:58.956Z",
+          "nodeVersion": "v24.14.0",
+          "nodeEnvironment": "development",
+          "platform": "win32",
+          "operatingSystem": "Windows_NT",
+          "operatingSystemRelease": "10.0.26300",
+          "architecture": "x64",
+          "cpu": {
+            "model": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+            "logicalCores": 8
+          },
+          "totalMemoryBytes": 8269570048,
+          "freeMemoryBytesAtStart": 909692928,
+          "redisVersion": "7.4.11",
+          "redisVersionError": null
+        },
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 2392.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 119856,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 2328.6,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 115014,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-high-limit-2026-10-26T10-19-51-713Z.json",
+        "generatedAt": "2026-10-26T10:19:51.713Z",
+        "environment": {
+          "collectedAt": "2026-10-26T10:18:05.466Z",
+          "nodeVersion": "v24.14.0",
+          "nodeEnvironment": "development",
+          "platform": "win32",
+          "operatingSystem": "Windows_NT",
+          "operatingSystemRelease": "10.0.26300",
+          "architecture": "x64",
+          "cpu": {
+            "model": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+            "logicalCores": 8
+          },
+          "totalMemoryBytes": 8269570048,
+          "freeMemoryBytesAtStart": 883650560,
+          "redisVersion": "7.4.11",
+          "redisVersionError": null
+        },
+        "algorithms": [
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": null,
+            "requestsPerSecond": 3185.8,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 159932,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": null,
+            "requestsPerSecond": 3130,
+            "totalRequests": null,
+            "latencyMs": {
+              "average": null,
+              "p50": null,
+              "p97_5": null,
+              "p99": null,
+              "max": null
+            },
+            "statusCounts": null,
+            "total2xx": 151837,
+            "total429": 0,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": null
+          }
+        ]
+      }
+    ],
+    "overview": [
+      {
+        "algorithm": "Sliding Window",
+        "reportEntries": 26,
+        "medianRequestsPerSecond": 3212.7,
+        "medianP50Ms": null,
+        "medianP97_5Ms": null,
+        "medianP99Ms": null,
+        "total2xx": 4400676,
+        "total429": 0,
+        "total5xx": 0,
+        "totalErrors": 0,
+        "totalTimeouts": 0
+      },
+      {
+        "algorithm": "Token Bucket",
+        "reportEntries": 26,
+        "medianRequestsPerSecond": 3069.3,
+        "medianP50Ms": null,
+        "medianP97_5Ms": null,
+        "medianP99Ms": null,
+        "total2xx": 4359893,
+        "total429": 0,
+        "total5xx": 0,
+        "totalErrors": 0,
+        "totalTimeouts": 0
+      }
+    ]
+  },
+  "overloadProtection": {
+    "reports": [
+      {
+        "sourceFile": "rate-limiter-2026-10-24T05-21-28-643Z.json",
+        "generatedAt": "2026-10-24T05:21:28.644Z",
+        "environment": null,
+        "resultsSource": "results",
+        "algorithms": [
+          {
+            "algorithm": "Fixed Window",
+            "endpoint": "/api/demo",
+            "requestsPerSecond": 5522.7,
+            "totalRequests": 55220,
+            "latencyMs": {
+              "average": 1.36,
+              "p50": 1,
+              "p97_5": 3,
+              "p99": 5,
+              "max": 47
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 55215
+            },
+            "total2xx": 5,
+            "total429": 55215,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": {
+              "durationSeconds": 10,
+              "connections": 10,
+              "pipelining": 1
+            }
+          },
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": "/api/sliding-window",
+            "requestsPerSecond": 4189.61,
+            "totalRequests": 41889,
+            "latencyMs": {
+              "average": 1.94,
+              "p50": 2,
+              "p97_5": 3,
+              "p99": 5,
+              "max": 37
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 41884
+            },
+            "total2xx": 5,
+            "total429": 41884,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": {
+              "durationSeconds": 10,
+              "connections": 10,
+              "pipelining": 1
+            }
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": "/api/token-bucket",
+            "requestsPerSecond": 4266.7,
+            "totalRequests": 42662,
+            "latencyMs": {
+              "average": 1.87,
+              "p50": 2,
+              "p97_5": 3,
+              "p99": 4,
+              "max": 28
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 42657
+            },
+            "total2xx": 5,
+            "total429": 42657,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": {
+              "durationSeconds": 10,
+              "connections": 10,
+              "pipelining": 1
+            }
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-2026-10-24T05-25-38-866Z.json",
+        "generatedAt": "2026-10-24T05:25:38.867Z",
+        "environment": null,
+        "resultsSource": "results",
+        "algorithms": [
+          {
+            "algorithm": "Fixed Window",
+            "endpoint": "/api/demo",
+            "requestsPerSecond": 5859,
+            "totalRequests": 58584,
+            "latencyMs": {
+              "average": 1.28,
+              "p50": 1,
+              "p97_5": 3,
+              "p99": 5,
+              "max": 32
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 58579
+            },
+            "total2xx": 5,
+            "total429": 58579,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": {
+              "durationSeconds": 10,
+              "connections": 10,
+              "pipelining": 1
+            }
+          },
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": "/api/sliding-window",
+            "requestsPerSecond": 5078.8,
+            "totalRequests": 50781,
+            "latencyMs": {
+              "average": 1.45,
+              "p50": 1,
+              "p97_5": 3,
+              "p99": 4,
+              "max": 34
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 50776
+            },
+            "total2xx": 5,
+            "total429": 50776,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": {
+              "durationSeconds": 10,
+              "connections": 10,
+              "pipelining": 1
+            }
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": "/api/token-bucket",
+            "requestsPerSecond": 4405,
+            "totalRequests": 44040,
+            "latencyMs": {
+              "average": 1.81,
+              "p50": 2,
+              "p97_5": 3,
+              "p99": 4,
+              "max": 35
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 44035
+            },
+            "total2xx": 5,
+            "total429": 44035,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": null,
+            "configuration": {
+              "durationSeconds": 10,
+              "connections": 10,
+              "pipelining": 1
+            }
+          }
+        ]
+      },
+      {
+        "sourceFile": "rate-limiter-repeatable-2026-10-24T05-50-38-765Z.json",
+        "generatedAt": "2026-10-24T05:50:38.766Z",
+        "environment": null,
+        "resultsSource": "rawResults",
+        "algorithms": [
+          {
+            "algorithm": "Fixed Window",
+            "endpoint": "/api/demo",
+            "requestsPerSecond": 6608.46,
+            "totalRequests": 72690,
+            "latencyMs": {
+              "average": 1.16,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 3,
+              "max": 34
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 72685
+            },
+            "total2xx": 5,
+            "total429": 72685,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 1,
+            "configuration": null
+          },
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": "/api/sliding-window",
+            "requestsPerSecond": 5190.11,
+            "totalRequests": 51899,
+            "latencyMs": {
+              "average": 1.42,
+              "p50": 1,
+              "p97_5": 4,
+              "p99": 5,
+              "max": 40
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 51894
+            },
+            "total2xx": 5,
+            "total429": 51894,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 1,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": "/api/token-bucket",
+            "requestsPerSecond": 6041.6,
+            "totalRequests": 60406,
+            "latencyMs": {
+              "average": 1.18,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 3,
+              "max": 46
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 60401
+            },
+            "total2xx": 5,
+            "total429": 60401,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 1,
+            "configuration": null
+          },
+          {
+            "algorithm": "Fixed Window",
+            "endpoint": "/api/demo",
+            "requestsPerSecond": 7199.82,
+            "totalRequests": 79195,
+            "latencyMs": {
+              "average": 1.05,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 3,
+              "max": 12
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 79190
+            },
+            "total2xx": 5,
+            "total429": 79190,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 2,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": "/api/token-bucket",
+            "requestsPerSecond": 6109.2,
+            "totalRequests": 61084,
+            "latencyMs": {
+              "average": 1.12,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 3,
+              "max": 67
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 61079
+            },
+            "total2xx": 5,
+            "total429": 61079,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 2,
+            "configuration": null
+          },
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": "/api/sliding-window",
+            "requestsPerSecond": 5961.6,
+            "totalRequests": 59605,
+            "latencyMs": {
+              "average": 1.11,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 3,
+              "max": 10
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 59600
+            },
+            "total2xx": 5,
+            "total429": 59600,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 2,
+            "configuration": null
+          },
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": "/api/sliding-window",
+            "requestsPerSecond": 6043.2,
+            "totalRequests": 60422,
+            "latencyMs": {
+              "average": 1.17,
+              "p50": 1,
+              "p97_5": 3,
+              "p99": 4,
+              "max": 80
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 60417
+            },
+            "total2xx": 5,
+            "total429": 60417,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 3,
+            "configuration": null
+          },
+          {
+            "algorithm": "Fixed Window",
+            "endpoint": "/api/demo",
+            "requestsPerSecond": 7286.4,
+            "totalRequests": 72854,
+            "latencyMs": {
+              "average": 1.07,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 3,
+              "max": 27
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 72849
+            },
+            "total2xx": 5,
+            "total429": 72849,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 3,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": "/api/token-bucket",
+            "requestsPerSecond": 5772,
+            "totalRequests": 57712,
+            "latencyMs": {
+              "average": 1.13,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 4,
+              "max": 56
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 57707
+            },
+            "total2xx": 5,
+            "total429": 57707,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 3,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": "/api/token-bucket",
+            "requestsPerSecond": 5868,
+            "totalRequests": 58681,
+            "latencyMs": {
+              "average": 1.15,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 3,
+              "max": 98
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 58676
+            },
+            "total2xx": 5,
+            "total429": 58676,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 4,
+            "configuration": null
+          },
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": "/api/sliding-window",
+            "requestsPerSecond": 5896,
+            "totalRequests": 58958,
+            "latencyMs": {
+              "average": 1.15,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 3,
+              "max": 12
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 58953
+            },
+            "total2xx": 5,
+            "total429": 58953,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 4,
+            "configuration": null
+          },
+          {
+            "algorithm": "Fixed Window",
+            "endpoint": "/api/demo",
+            "requestsPerSecond": 6376,
+            "totalRequests": 63749,
+            "latencyMs": {
+              "average": 1.09,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 3,
+              "max": 10
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 63744
+            },
+            "total2xx": 5,
+            "total429": 63744,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 4,
+            "configuration": null
+          },
+          {
+            "algorithm": "Token Bucket",
+            "endpoint": "/api/token-bucket",
+            "requestsPerSecond": 5423.2,
+            "totalRequests": 54227,
+            "latencyMs": {
+              "average": 1.24,
+              "p50": 1,
+              "p97_5": 3,
+              "p99": 4,
+              "max": 11
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 54222
+            },
+            "total2xx": 5,
+            "total429": 54222,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 5,
+            "configuration": null
+          },
+          {
+            "algorithm": "Sliding Window",
+            "endpoint": "/api/sliding-window",
+            "requestsPerSecond": 5504.9,
+            "totalRequests": 55045,
+            "latencyMs": {
+              "average": 1.26,
+              "p50": 1,
+              "p97_5": 3,
+              "p99": 4,
+              "max": 135
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 55040
+            },
+            "total2xx": 5,
+            "total429": 55040,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 5,
+            "configuration": null
+          },
+          {
+            "algorithm": "Fixed Window",
+            "endpoint": "/api/demo",
+            "requestsPerSecond": 6033.2,
+            "totalRequests": 60330,
+            "latencyMs": {
+              "average": 1.16,
+              "p50": 1,
+              "p97_5": 2,
+              "p99": 4,
+              "max": 8
+            },
+            "statusCounts": {
+              "200": 5,
+              "429": 60325
+            },
+            "total2xx": 5,
+            "total429": 60325,
+            "total5xx": 0,
+            "errors": 0,
+            "timeouts": 0,
+            "round": 5,
+            "configuration": null
+          }
+        ]
+      }
+    ],
+    "overview": [
+      {
+        "algorithm": "Fixed Window",
+        "reportEntries": 7,
+        "medianRequestsPerSecond": 6376,
+        "medianP50Ms": 1,
+        "medianP97_5Ms": 2,
+        "medianP99Ms": 3,
+        "total2xx": 35,
+        "total429": 462587,
+        "total5xx": 0,
+        "totalErrors": 0,
+        "totalTimeouts": 0
+      },
+      {
+        "algorithm": "Sliding Window",
+        "reportEntries": 7,
+        "medianRequestsPerSecond": 5504.9,
+        "medianP50Ms": 1,
+        "medianP97_5Ms": 3,
+        "medianP99Ms": 4,
+        "total2xx": 35,
+        "total429": 378564,
+        "total5xx": 0,
+        "totalErrors": 0,
+        "totalTimeouts": 0
+      },
+      {
+        "algorithm": "Token Bucket",
+        "reportEntries": 7,
+        "medianRequestsPerSecond": 5772,
+        "medianP50Ms": 1,
+        "medianP97_5Ms": 2,
+        "medianP99Ms": 4,
+        "total2xx": 35,
+        "total429": 378777,
+        "total5xx": 0,
+        "totalErrors": 0,
+        "totalTimeouts": 0
+      }
+    ]
+  },
+  "warnings": [
+    {
+      "filename": "rate-limiter-repeatable-2026-10-24T05-50-38-765Z.json",
+      "warning": "Legacy result data extracted from \"rawResults\". Verify its schema before relying on comparisons."
+    }
+  ],
+  "skippedFiles": []
+}

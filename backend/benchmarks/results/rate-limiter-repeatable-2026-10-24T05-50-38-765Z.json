@@ -1,0 +1,383 @@
+{
+  "project": "ThrottleX",
+  "benchmarkType": "repeatable-overload-test",
+  "baseUrl": "http://localhost:5000",
+  "generatedAt": "2026-10-24T05:50:38.766Z",
+  "configuration": {
+    "rounds": 5,
+    "durationSeconds": 10,
+    "connections": 10,
+    "pipelining": 1,
+    "randomizedOrder": true
+  },
+  "limitations": [
+    "Single local environment; results may not generalize.",
+    "Algorithms use different admission and refill semantics.",
+    "Median latency values are summaries of run-level percentiles.",
+    "Overload throughput is not pure algorithm execution capacity."
+  ],
+  "summary": [
+    {
+      "algorithm": "Fixed Window",
+      "rounds": 5,
+      "medianRequestsPerSecond": 6608.46,
+      "medianLatencyMs": {
+        "average": 1.09,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3
+      },
+      "medianTotalRequests": 72690,
+      "total429": 348793,
+      "totalErrors": 0,
+      "totalTimeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "rounds": 5,
+      "medianRequestsPerSecond": 5896,
+      "medianLatencyMs": {
+        "average": 1.17,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4
+      },
+      "medianTotalRequests": 58958,
+      "total429": 285904,
+      "totalErrors": 0,
+      "totalTimeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "rounds": 5,
+      "medianRequestsPerSecond": 5868,
+      "medianLatencyMs": {
+        "average": 1.15,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3
+      },
+      "medianTotalRequests": 58681,
+      "total429": 292085,
+      "totalErrors": 0,
+      "totalTimeouts": 0
+    }
+  ],
+  "rawResults": [
+    {
+      "algorithm": "Fixed Window",
+      "endpoint": "/api/demo",
+      "round": 1,
+      "requestsPerSecond": 6608.46,
+      "totalRequests": 72690,
+      "latencyMs": {
+        "average": 1.16,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 34
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 72685
+      },
+      "non2xx": 72685,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/sliding-window",
+      "round": 1,
+      "requestsPerSecond": 5190.11,
+      "totalRequests": 51899,
+      "latencyMs": {
+        "average": 1.42,
+        "p50": 1,
+        "p97_5": 4,
+        "p99": 5,
+        "max": 40
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 51894
+      },
+      "non2xx": 51894,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/token-bucket",
+      "round": 1,
+      "requestsPerSecond": 6041.6,
+      "totalRequests": 60406,
+      "latencyMs": {
+        "average": 1.18,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 46
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 60401
+      },
+      "non2xx": 60401,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Fixed Window",
+      "endpoint": "/api/demo",
+      "round": 2,
+      "requestsPerSecond": 7199.82,
+      "totalRequests": 79195,
+      "latencyMs": {
+        "average": 1.05,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 12
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 79190
+      },
+      "non2xx": 79190,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/token-bucket",
+      "round": 2,
+      "requestsPerSecond": 6109.2,
+      "totalRequests": 61084,
+      "latencyMs": {
+        "average": 1.12,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 67
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 61079
+      },
+      "non2xx": 61079,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/sliding-window",
+      "round": 2,
+      "requestsPerSecond": 5961.6,
+      "totalRequests": 59605,
+      "latencyMs": {
+        "average": 1.11,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 10
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 59600
+      },
+      "non2xx": 59600,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/sliding-window",
+      "round": 3,
+      "requestsPerSecond": 6043.2,
+      "totalRequests": 60422,
+      "latencyMs": {
+        "average": 1.17,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 80
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 60417
+      },
+      "non2xx": 60417,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Fixed Window",
+      "endpoint": "/api/demo",
+      "round": 3,
+      "requestsPerSecond": 7286.4,
+      "totalRequests": 72854,
+      "latencyMs": {
+        "average": 1.07,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 27
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 72849
+      },
+      "non2xx": 72849,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/token-bucket",
+      "round": 3,
+      "requestsPerSecond": 5772,
+      "totalRequests": 57712,
+      "latencyMs": {
+        "average": 1.13,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 4,
+        "max": 56
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 57707
+      },
+      "non2xx": 57707,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/token-bucket",
+      "round": 4,
+      "requestsPerSecond": 5868,
+      "totalRequests": 58681,
+      "latencyMs": {
+        "average": 1.15,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 98
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 58676
+      },
+      "non2xx": 58676,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/sliding-window",
+      "round": 4,
+      "requestsPerSecond": 5896,
+      "totalRequests": 58958,
+      "latencyMs": {
+        "average": 1.15,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 12
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 58953
+      },
+      "non2xx": 58953,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Fixed Window",
+      "endpoint": "/api/demo",
+      "round": 4,
+      "requestsPerSecond": 6376,
+      "totalRequests": 63749,
+      "latencyMs": {
+        "average": 1.09,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 10
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 63744
+      },
+      "non2xx": 63744,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/token-bucket",
+      "round": 5,
+      "requestsPerSecond": 5423.2,
+      "totalRequests": 54227,
+      "latencyMs": {
+        "average": 1.24,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 11
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 54222
+      },
+      "non2xx": 54222,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/sliding-window",
+      "round": 5,
+      "requestsPerSecond": 5504.9,
+      "totalRequests": 55045,
+      "latencyMs": {
+        "average": 1.26,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 135
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 55040
+      },
+      "non2xx": 55040,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Fixed Window",
+      "endpoint": "/api/demo",
+      "round": 5,
+      "requestsPerSecond": 6033.2,
+      "totalRequests": 60330,
+      "latencyMs": {
+        "average": 1.16,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 4,
+        "max": 8
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 60325
+      },
+      "non2xx": 60325,
+      "errors": 0,
+      "timeouts": 0
+    }
+  ]
+}

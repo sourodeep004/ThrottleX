@@ -1,0 +1,318 @@
+{
+  "project": "ThrottleX",
+  "benchmarkType": "high-limit-algorithm-overhead",
+  "baseUrl": "http://localhost:5000",
+  "generatedAt": "2026-10-24T05:59:06.988Z",
+  "configuration": {
+    "rounds": 5,
+    "durationSeconds": 10,
+    "connections": 10,
+    "pipelining": 1,
+    "randomizedOrder": true
+  },
+  "notes": [
+    "This benchmark compares complete endpoint implementations.",
+    "Both algorithms use a configured limit of 1000000.",
+    "The algorithms have different Redis data structures and operations.",
+    "Results describe this environment and are not universal rankings.",
+    "Latency summary values are medians of run-level percentiles."
+  ],
+  "summary": [
+    {
+      "algorithm": "Sliding Window",
+      "rounds": 5,
+      "medianRequestsPerSecond": 5657.2,
+      "medianTotalRequests": 56566,
+      "medianLatencyMs": {
+        "average": 1.19,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 3
+      },
+      "total2xx": 280613,
+      "total429": 0,
+      "total5xx": 0,
+      "totalErrors": 0,
+      "totalTimeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "rounds": 5,
+      "medianRequestsPerSecond": 5374.4,
+      "medianTotalRequests": 53741,
+      "medianLatencyMs": {
+        "average": 1.25,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4
+      },
+      "total2xx": 273579,
+      "total429": 0,
+      "total5xx": 0,
+      "totalErrors": 0,
+      "totalTimeouts": 0
+    }
+  ],
+  "rawResults": [
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/benchmark/token-bucket",
+      "round": 1,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5115.5,
+      "totalRequests": 51151,
+      "latencyMs": {
+        "average": 1.38,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 5,
+        "max": 73
+      },
+      "statusCounts": {
+        "200": 51151
+      },
+      "countedResponses": 51151,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/benchmark/sliding-window",
+      "round": 1,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5418,
+      "totalRequests": 54175,
+      "latencyMs": {
+        "average": 1.28,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 38
+      },
+      "statusCounts": {
+        "200": 54175
+      },
+      "countedResponses": 54175,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/benchmark/sliding-window",
+      "round": 2,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5740.8,
+      "totalRequests": 57397,
+      "latencyMs": {
+        "average": 1.17,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 3,
+        "max": 54
+      },
+      "statusCounts": {
+        "200": 57397
+      },
+      "countedResponses": 57397,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/benchmark/token-bucket",
+      "round": 2,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 6093.2,
+      "totalRequests": 60927,
+      "latencyMs": {
+        "average": 1.1,
+        "p50": 1,
+        "p97_5": 2,
+        "p99": 3,
+        "max": 17
+      },
+      "statusCounts": {
+        "200": 60927
+      },
+      "countedResponses": 60927,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/benchmark/sliding-window",
+      "round": 3,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5657.2,
+      "totalRequests": 56566,
+      "latencyMs": {
+        "average": 1.21,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 3,
+        "max": 22
+      },
+      "statusCounts": {
+        "200": 56566
+      },
+      "countedResponses": 56566,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/benchmark/token-bucket",
+      "round": 3,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5237.9,
+      "totalRequests": 52374,
+      "latencyMs": {
+        "average": 1.32,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 9
+      },
+      "statusCounts": {
+        "200": 52374
+      },
+      "countedResponses": 52374,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/benchmark/sliding-window",
+      "round": 4,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5741.2,
+      "totalRequests": 57412,
+      "latencyMs": {
+        "average": 1.17,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 3,
+        "max": 77
+      },
+      "statusCounts": {
+        "200": 57412
+      },
+      "countedResponses": 57412,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/benchmark/token-bucket",
+      "round": 4,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5374.4,
+      "totalRequests": 53741,
+      "latencyMs": {
+        "average": 1.25,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 18
+      },
+      "statusCounts": {
+        "200": 53741
+      },
+      "countedResponses": 53741,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/benchmark/sliding-window",
+      "round": 5,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5506.8,
+      "totalRequests": 55063,
+      "latencyMs": {
+        "average": 1.19,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 34
+      },
+      "statusCounts": {
+        "200": 55063
+      },
+      "countedResponses": 55063,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/benchmark/token-bucket",
+      "round": 5,
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5539.2,
+      "totalRequests": 55386,
+      "latencyMs": {
+        "average": 1.19,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 110
+      },
+      "statusCounts": {
+        "200": 55386
+      },
+      "countedResponses": 55386,
+      "non2xx": 0,
+      "errors": 0,
+      "timeouts": 0
+    }
+  ]
+}

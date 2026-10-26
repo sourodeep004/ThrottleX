@@ -1,0 +1,87 @@
+{
+  "project": "ThrottleX",
+  "benchmarkType": "overload-protection",
+  "baseUrl": "http://localhost:5000",
+  "generatedAt": "2026-10-24T05:21:28.644Z",
+  "note": "This test measures behavior under overload. Accepted throughput is constrained by rate limits; it is not a pure algorithm-capacity benchmark.",
+  "results": [
+    {
+      "algorithm": "Fixed Window",
+      "endpoint": "/api/demo",
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5522.7,
+      "totalRequests": 55220,
+      "latencyMs": {
+        "average": 1.36,
+        "p50": 1,
+        "p97_5": 3,
+        "p99": 5,
+        "max": 47
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 55215
+      },
+      "countedResponses": 55220,
+      "non2xx": 55215,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/sliding-window",
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 4189.61,
+      "totalRequests": 41889,
+      "latencyMs": {
+        "average": 1.94,
+        "p50": 2,
+        "p97_5": 3,
+        "p99": 5,
+        "max": 37
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 41884
+      },
+      "countedResponses": 41889,
+      "non2xx": 41884,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/token-bucket",
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 4266.7,
+      "totalRequests": 42662,
+      "latencyMs": {
+        "average": 1.87,
+        "p50": 2,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 28
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 42657
+      },
+      "countedResponses": 42662,
+      "non2xx": 42657,
+      "errors": 0,
+      "timeouts": 0
+    }
+  ]
+}

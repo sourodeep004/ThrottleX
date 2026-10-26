@@ -1,0 +1,93 @@
+{
+  "project": "ThrottleX",
+  "benchmarkType": "overload-protection",
+  "baseUrl": "http://localhost:5000",
+  "generatedAt": "2026-10-24T05:25:38.867Z",
+  "note": "This test measures behavior under overload. Accepted throughput is constrained by rate limits; it is not a pure algorithm-capacity benchmark.",
+  "results": [
+    {
+      "algorithm": "Fixed Window",
+      "endpoint": "/api/demo",
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5859,
+      "totalRequests": 58584,
+      "latencyMs": {
+        "average": 1.28,
+        "p50": 1,
+        "p75": 1,
+        "p90": 2,
+        "p97_5": 3,
+        "p99": 5,
+        "max": 32
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 58579
+      },
+      "countedResponses": 58584,
+      "non2xx": 58579,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Sliding Window",
+      "endpoint": "/api/sliding-window",
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 5078.8,
+      "totalRequests": 50781,
+      "latencyMs": {
+        "average": 1.45,
+        "p50": 1,
+        "p75": 2,
+        "p90": 2,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 34
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 50776
+      },
+      "countedResponses": 50781,
+      "non2xx": 50776,
+      "errors": 0,
+      "timeouts": 0
+    },
+    {
+      "algorithm": "Token Bucket",
+      "endpoint": "/api/token-bucket",
+      "configuration": {
+        "durationSeconds": 10,
+        "connections": 10,
+        "pipelining": 1
+      },
+      "requestsPerSecond": 4405,
+      "totalRequests": 44040,
+      "latencyMs": {
+        "average": 1.81,
+        "p50": 2,
+        "p75": 2,
+        "p90": 2,
+        "p97_5": 3,
+        "p99": 4,
+        "max": 35
+      },
+      "statusCounts": {
+        "200": 5,
+        "429": 44035
+      },
+      "countedResponses": 44040,
+      "non2xx": 44035,
+      "errors": 0,
+      "timeouts": 0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+
+services:
+  mongodb:
+    image: mongo:8
+    container_name: throttlex-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - throttlex_mongo_data:/data/db
+
+  redis:
+    image: redis:8
+    container_name: throttlex-redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - throttlex_redis_data:/data
+
+volumes:
+  throttlex_mongo_data:
+  throttlex_redis_data:
